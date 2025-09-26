@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/hero.css";
-import profileImage from "../assets/IMG_20221108_155639_004.jpg"; // Coloque sua imagem em src/assets
+//import profileImage from "../assets/IMG_20221108_155639_004.jpg"; // Coloque sua imagem em src/assets
 
 export default function Hero() {
   return (
@@ -13,9 +13,9 @@ export default function Hero() {
           <span>– Steve Jobs</span>
         </p>
       </div>
-      <div className="hero-image">
+   {/*    <div className="hero-image">
         <img src={profileImage} alt="Michaela Galbiati" />
-      </div>
+      </div> */}
     </section>
   );
 }

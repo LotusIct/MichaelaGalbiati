@@ -21,15 +21,15 @@ body {
 
 /* === COLOR VARIABLES === */
 :root {
-  --bg-dark: #0a192f;
-  --bg-box: #112240;
+  --bg-dark: #0C66BA;
+  --bg-box: #E8E5D5;
  --cinza-chumbo:	#243e4d;
-  --text-light: #e6f1ff;
-  --text-muted: #8892b0;
+  --text-light:#f78fd2;
+  --text-muted:#243e4d;
 
-  --primary:#FFD700;
-  --accent: #6C63FF;
-  --hover: #6C63FF;
+  --primary:#FAB6E2;
+  --accent:#E8E5D5;
+  --hover:#FAB6E2;
 
   --white: #ffffff;
   --black: #000000;

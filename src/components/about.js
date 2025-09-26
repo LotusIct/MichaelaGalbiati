@@ -4,19 +4,19 @@ import "../styles/about.css";
 const areas = [
   {
     title: "IA & Data Science",
-    text: "Coleta, tratamento, análise e modelagem de dados, com foco em estratégias analíticas que apoiam a tomada de decisão. Aplicação de Machine Learning para gerar insights e otimização de processos de negócio.",
+    text: "Aplicação de Redes Neurais e Deep Learning em soluções com Visão Computacional e Robótica Inteligente para análise de dados e automação.",
   },
   {
     title: "Backend",
-    text: "Desenvolvimento de APIs robustas, sistemas escaláveis e soluções integradas, utilizando tecnologias como .NET Core, Python e bancos de dados relacionais e não-relacionais.",
+    text: "Desenvolvimento de APIs escaláveis, sistemas robustos e soluções integradas com .NET Core, Python e bancos de dados relacionais e não-relacionais.",
   },
   {
     title: "Frontend",
-    text: "Criação de interfaces modernas e responsivas com React, Angular e Vue.js, entregando experiências rápidas e intuitivas para usuários finais.",
+    text: "Criação de interfaces modernas, rápidas e responsivas com React, Angular e Vue.js, priorizando performance, usabilidade e integração com APIs.",
   },
   {
     title: "UI/UX",
-    text: "Foco na experiência do usuário desde a concepção até a entrega final, com design centrado no usuário, prototipação, usabilidade e acessibilidade.",
+    text: "Design centrado no usuário com foco em prototipação, acessibilidade e usabilidade, desde a concepção da ideia até a entrega final da solução.",
   },
 ];
 

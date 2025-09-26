@@ -75,11 +75,13 @@ form {
   flex-wrap: wrap;
 }
 .contact-info p {
-  color: var(--text-light);
+  color: var(--cinza-chumbo);
   font-style: italic;
   font-size: 0.85rem; /* ou ajuste conforme preferir */
 }
-
+.contact-info h3 {
+  color: var(--cinza-chumbo);
+}
 .form-group {
   flex: 1;
   display: flex;
@@ -114,7 +116,7 @@ textarea:focus {
 
 .submit-btn {
   background: var(--hover);
-  color: #fff;
+  color:var(--cinza-chumbo);
   font-size: 1rem;
   padding: 0.75rem 1.5rem;
   border: none;

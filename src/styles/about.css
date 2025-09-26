@@ -30,6 +30,8 @@
   scroll-behavior: smooth;
   max-width: 100%;
   margin: 0 auto;
+   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
 /* Estilo de cada card */
@@ -62,7 +64,7 @@
 
 .area-card p {
   font-size: 1rem;
-  color: var(--text-muted);
+  color: var(--accent);
   line-height: 1.6;
   text-align: left;
   flex: 1 0 auto; /* faz o parágrafo crescer e manter a altura equilibrada */
@@ -70,19 +72,30 @@
 
 /* Responsivo */
 @media (max-width: 768px) {
+@media (max-width: 768px) {
   .about-cards {
     flex-direction: row;
     gap: 1rem;
     padding: 1rem;
     overflow-x: auto;
+    overflow-y: hidden;
     justify-content: flex-start;
+    align-items: flex-start;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
   }
 
   .area-card {
     flex: 0 0 80%;
     max-width: 80%;
     scroll-snap-align: center;
+    min-height: 300px; /* <- aqui está a correção principal */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
+}
+
 
   .about-cards::-webkit-scrollbar {
     height: 8px;
@@ -93,3 +106,4 @@
     border-radius: 4px;
   }
 }
+
