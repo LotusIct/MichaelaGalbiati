@@ -23,7 +23,7 @@ const areas = [
 
 export default function About() {
   return (
-    <section className="about">
+    <section id="about" className="about">
       <div className="about-header">
     <div  className="about-photo" >    {/* <img src={minhaFoto} alt="Michaela Galbiati" className="about-photo" /> */}</div>
        <TypingText text="Hello, prazer! Sou Michaela Galbiati" speed={100} />

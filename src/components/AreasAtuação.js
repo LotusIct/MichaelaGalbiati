@@ -37,7 +37,7 @@ const areas = [
 
 export default function AreasAtuacao() {
   return (
-    <section className="areas-atuacao ">
+    <section className="areas-atuacao " id="project">
       <h2> Projects & Partnerships</h2>
       <div className="areas-grid">
         {areas.map(({ id, title, description }) => (

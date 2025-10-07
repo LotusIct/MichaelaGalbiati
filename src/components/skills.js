@@ -20,7 +20,7 @@ const techs = [
 ];
 export default function Skills() {
   return (
-    <section className="section skills">
+    <section className="section skills" id="learn">
      <h2>My Skillsets</h2>
 <p className="skills-description">
   These are some of the tools and technologies I love working with to bring ideas to life on the web.

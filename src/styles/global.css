@@ -34,6 +34,9 @@ body {
   --white: #ffffff;
   --black: #000000;
 }
+section[id] {
+  scroll-margin-top: 80px; /* ou o valor exato da altura da sua navbar */
+}
 
 /* === TYPOGRAPHY === */
 h1, h2, h3, h4, h5 {

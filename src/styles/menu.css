@@ -20,6 +20,10 @@
   transition: all 0.3s ease;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+}
 
 .navbar-container {
   max-width: 1200px;
@@ -34,10 +38,6 @@
 }
 
 
-/* Logo */
-.navbar-logo img {
-  height: 36px;
-}
 
 .navbar-toggle {
   display: none;
@@ -50,7 +50,7 @@
 }
 
 .navbar-toggle:hover {
-  color: var(--hover-color);
+  color: var(--text-light) !important;
 }
 
 @media (max-width: 768px) {
@@ -93,7 +93,7 @@
 }
 
 .navbar-menu li a:hover {
-  color: var(--hover-color);
+  color: var( --text-light);
 }
 
 /* Social icons */
@@ -110,7 +110,7 @@
 }
 
 .navbar-socials li a:hover {
-  color: var(--hover-color);
+  color: var( --text-light);
 }
 
 /* RESPONSIVO */
