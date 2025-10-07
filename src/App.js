@@ -8,6 +8,7 @@ import Skills from "./components/skills";
 import Contact from "./components/contact.js";
 import Footer from "./components/footer.js";
 import Projects from "./components/projects.js";
+import AreasAtuacao from "./components/AreasAtuação.js"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <Hero />
       <Projects/>
+       <AreasAtuacao />
       <About />
       <Skills />
       <Contact/>

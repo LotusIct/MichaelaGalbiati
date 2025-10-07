@@ -4,71 +4,58 @@ import "../styles/projects.css";
 const projects = [
   {
     id: 1,
-    title: "Projeto 1",
-    description: "Descrição breve do projeto 1.",
-    image: "/images/project1.png",
+    title: "Blog DeepBit",
+    description: "Um blog interativo da IA preditiva da MG Dimensional Tech, com conteúdo sobre tecnologia, estratégia e inovação.",
+    image: "/images/blog-deepbit.png",
   },
   {
     id: 2,
-    title: "Projeto 2",
-    description: "Descrição breve do projeto 2.",
-    image: "/images/project2.png",
+    title: "Personal Travel Pest",
+    description: "Landing page para um serviço exclusivo de viagens personalizadas, com roteiros sob medida e experiências únicas.",
+    image: "/images/travel-pest.png",
   },
   {
     id: 3,
-    title: "Projeto 3",
-    description: "Descrição breve do projeto 3.",
-    image: "/images/project3.png",
+    title: "Pesquisa Aromas Frutais",
+    description: "Página institucional de um projeto de pesquisa laboratorial sobre aromas frutais e aplicações sensoriais.",
+    image: "/images/lab-aromas.png",
   },
   {
     id: 4,
-    title: "Projeto 4",
-    description: "Descrição breve do projeto 4.",
-    image: "/images/project4.png",
+    title: "E-commerce SneakerLab",
+    description: "Loja virtual especializada em tênis exclusivos e colecionáveis, com design moderno e navegação fluida.",
+    image: "/images/sneakerlab.png",
   },
   {
     id: 5,
-    title: "Projeto 5",
-    description: "Descrição breve do projeto 5.",
-    image: "/images/project5.png",
+    title: "Portfólio Jurídico & BI",
+    description: "Site pessoal de um profissional com formação em Direito e atuação em Business Intelligence e consultoria empresarial.",
+    image: "/images/portfolio-juridico.png",
   },
   {
     id: 6,
-    title: "Projeto 6",
-    description: "Descrição breve do projeto 6.",
-    image: "/images/project6.png",
+    title: "Studio MGD",
+    description: "Website de um estúdio criativo especializado em marketing digital, design gráfico e branding estratégico.",
+    image: "/images/studio-mgd.png",
   },
   {
     id: 7,
-    title: "Projeto 7",
-    description: "Descrição breve do projeto 7.",
-    image: "/images/project7.png",
+    title: "Portal Empresários MGDimensional",
+    description: "Site de apresentação e conexão dos empresários e parceiros da MG Dimensional Tech.",
+    image: "/images/empresarios-mg.png",
   },
   {
     id: 8,
-    title: "Projeto 8",
-    description: "Descrição breve do projeto 8.",
-    image: "/images/project8.png",
-  },
-  {
-    id: 9,
-    title: "Projeto 9",
-    description: "Descrição breve do projeto 9.",
-    image: "/images/project9.png",
-  },
-  {
-    id: 10,
-    title: "Projeto 10",
-    description: "Descrição breve do projeto 10.",
-    image: "/images/project10.png",
+    title: "Dashboard IA Estratégica",
+    description: "Ferramenta analítica com painéis interativos de dados estratégicos, apoiada por IA preditiva.",
+    image: "/images/dashboard-ia.png",
   },
 ];
 
 export default function Projects() {
   return (
     <section id="projects" className="container">
-      <h2>Side Projects
-</h2>
+      <h2>Side Projects</h2>
       <div className="projects-grid">
         {projects.map(({ id, title, description, image }) => (
           <div key={id} className="box project-card">

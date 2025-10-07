@@ -13,7 +13,7 @@
 }
 
 .project-card h3 {
-  color: var(--primary);
+  color: var(--text-light);
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
