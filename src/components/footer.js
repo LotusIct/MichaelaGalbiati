@@ -1,13 +1,14 @@
 import React from "react";
 import "../styles/footer.css";
 
+import logo from "../assets/logomib.png"; // ajuste o caminho conforme a pasta
+
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content container">
         <div className="footer-brand">
-          <img src="/path/to/logo.png" alt="Logo" className="footer-logo" />
-          <span className="footer-name">YourBrand</span>
+          <img src={logo} alt="Logo" className="footer-logo" />
         </div>
 
         <div className="footer-text">
