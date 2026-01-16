@@ -57,7 +57,7 @@
 .contact-form {
   flex: 2;
   min-width: 350px;
-  background: var(--bg-dark);
+  background: white;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -100,8 +100,8 @@ input,
 textarea {
   padding: 0.75rem 1rem;
   border-radius: 6px;
-  border: none;
-  background-color: #1c1c2e;
+  border: 1px solid var(--text-light);
+  background-color:white;
   color: var(--text-light);
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;

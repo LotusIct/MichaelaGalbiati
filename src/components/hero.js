@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/hero.css";
-import heroVideo from "../assets/mivideo.mp4"; // importe seu vídeo
+import heroVideo from "../assets/videobanner.mp4"; // importe seu vídeo
 
 export default function Hero() {
   return (

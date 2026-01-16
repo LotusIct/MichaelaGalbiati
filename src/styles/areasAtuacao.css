@@ -1,6 +1,6 @@
 .areas-atuacao {
   margin: auto;
-  background-color: var( --primary);
+  background-color: white;
 }
 
 .areas-atuacao h2 {
@@ -34,10 +34,11 @@
   color: var( --bg-dark);
   margin-bottom: 0.75rem;
   font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .area-cards p {
-  color: var(--text-muted);
-  font-size: 0.95rem;
+  color: white;
+  font-size: 0.90rem;
   line-height: 1.4;
 }

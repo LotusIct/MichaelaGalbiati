@@ -1,7 +1,7 @@
 .skills {
   padding: 4rem 2rem;
   background-color: var(--primary);
-  height: 70vh;
+  height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -35,16 +35,20 @@
   position: relative;
   max-width: 1000px;
   width: 100%;
+  padding: 20px;
 }
 
 .marquee-track {
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 30s linear infinite;
   white-space: nowrap;
   animation-play-state: running;
   transition: animation-play-state 0.3s ease;
   cursor: grab;
-  padding: 10px;
+  padding-bottom: 80px;
+  margin-top: -170px;
+  height: 500px;
+    width: max-content;
 }
 
 .skills-marquee:hover .marquee-track,
@@ -57,15 +61,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--bg-dark);
-  margin: 0 1.5rem;
+  color: white;
+  margin: 0 0.25rem;
   min-width: 100px;
   cursor: pointer;
+  position: relative;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .tech-icon i {
-  font-size: 4rem;
+  font-size: 2.5rem;
   filter: drop-shadow(0 2px 2px rgba(0,0,0,0.15));
   transition: filter 0.3s ease;
 }
@@ -75,7 +80,7 @@
   font-size: 1rem;
   font-weight: 500;
   text-transform: capitalize;
-  color: var(--bg-dark);
+  color: white;
   user-select: none;
 }
 
@@ -83,7 +88,14 @@
   color: var(--bg-dark);
   transform: scale(1.1);
 }
-
+.tech-icon span:hover {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color:var(--bg-dark);
+  user-select: none;
+}
 .tech-icon:hover i {
   filter: drop-shadow(0 4px 4px rgba(0,0,0,0.3));
 }
@@ -95,6 +107,40 @@
   100% {
     transform: translateX(-50%);
   }
+}
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  top: 60%; /* posição abaixo do ícone */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg-dark);
+  color: white;
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+  white-space: normal;
+  font-size: 0.875rem;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+  pointer-events: none;
+  width: max-content;
+  max-width: 200px;
+}
+
+.tooltip strong{
+font-size: 0.85rem;
+}
+.tooltip p{
+  font-size: 0.75rem;
+  color: rgb(218, 218, 218);
+  margin-top: 10px;
+}
+.tech-icon:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* RESPONSIVO */

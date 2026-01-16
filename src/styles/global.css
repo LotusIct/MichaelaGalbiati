@@ -21,18 +21,18 @@ body {
 
 /* === COLOR VARIABLES === */
 :root {
-  --bg-dark: #0C66BA;
-  --bg-box: #E8E5D5;
- --cinza-chumbo:	#243e4d;
-  --text-light:#f78fd2;
-  --text-muted:#243e4d;
+  --bg-dark: #2c3d58;
+  --bg-box: #e7e7e7;
+ --cinza-chumbo:	#0A2540;
+  --text-light:#06B6D4;
+  --text-muted:#6B7280;
 
-  --primary:#FAB6E2;
-  --accent:#E8E5D5;
-  --hover:#FAB6E2;
+  --primary:#06B6D4;
+  --accent:#d5d9e8;
+  --hover:#06B6D4;
 
   --white: #ffffff;
-  --black: #000000;
+  --black: #0A2540;
 }
 section[id] {
   scroll-margin-top: 80px; /* ou o valor exato da altura da sua navbar */

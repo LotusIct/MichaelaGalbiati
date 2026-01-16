@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/menu.css";
-import logo from "../assets/logomib.png"; // <-- Aqui importa seu logo
+import logo from "../assets/logomimi.png"; // <-- Aqui importa seu logo
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,8 +19,9 @@ export default function Navbar() {
           <ul className="navbar-menu">
             <li><a href="#about" onClick={closeMenu}>about</a></li>
             <li><a href="#projects" onClick={closeMenu}>studio</a></li>
-            <li><a href="#project" onClick={closeMenu}>Projects</a></li>
             <li><a href="#learn" onClick={closeMenu}>learn</a></li>
+            <li><a href="#project" onClick={closeMenu}>Projects</a></li>
+            
             
             <li><a href="#contact" onClick={closeMenu}>contact</a></li>
           </ul>

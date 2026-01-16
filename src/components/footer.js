@@ -1,7 +1,10 @@
 import React from "react";
 import "../styles/footer.css";
 
-import logo from "../assets/logomib.png"; // ajuste o caminho conforme a pasta
+import logo from "../assets/logomimi.png";
+
+// ÍCONES
+import { FiPhone, FiMail, FiLinkedin } from "react-icons/fi";
 
 export default function Footer() {
   return (
@@ -11,13 +14,35 @@ export default function Footer() {
           <img src={logo} alt="Logo" className="footer-logo" />
         </div>
 
-        <div className="footer-text">
-          <p>Construindo conexões que fazem a diferença.</p>
+        {/* SEÇÃO DE CONTATOS */}
+        <div className="footer-contact">
+          <a href="tel:+55021978128888">
+            <FiPhone className="footer-icon" />
+            +55 (21) 97812-8888
+          </a>
+
+          <a href="mailto:michaela.galbiati@gmail.com">
+            <FiMail className="footer-icon" />
+            michaela.galbiati@gmail.com
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/michaelagalbiati"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiLinkedin className="footer-icon" />
+            LinkedIn
+          </a>
         </div>
       </div>
 
+      <div className="footer-text">
+        <p>Construindo conexões que fazem a diferença.</p>
+      </div>
+
       <div className="footer-copy">
-        &copy; {new Date().getFullYear()} YourBrand. All rights reserved.
+        &copy; {new Date().getFullYear()} Michaela Galbiati. All rights reserved.
       </div>
     </footer>
   );
