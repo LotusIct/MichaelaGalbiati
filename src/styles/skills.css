@@ -40,7 +40,7 @@
 
 .marquee-track {
   display: flex;
-  animation: marquee 30s linear infinite;
+  animation: marquee 40s linear infinite;
   white-space: nowrap;
   animation-play-state: running;
   transition: animation-play-state 0.3s ease;
