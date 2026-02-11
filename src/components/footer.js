@@ -35,15 +35,17 @@ export default function Footer() {
             LinkedIn
           </a>
         </div>
-      </div>
-
-      <div className="footer-text">
+         <div className="footer-text">
         <p>Construindo conexões que fazem a diferença.</p>
-      </div>
-
-      <div className="footer-copy">
+          <div className="footer-copy">
         &copy; {new Date().getFullYear()} Michaela Galbiati. All rights reserved.
       </div>
+      </div>
+
+     
+      </div>
+
+     
     </footer>
   );
 }

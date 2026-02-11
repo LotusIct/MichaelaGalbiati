@@ -4,44 +4,60 @@ import "../styles/areasAtuacao.css";
 const areas = [
   {
     id: 1,
-    title: "Supply Chain",
-    description: "Otimização e gestão inteligente da cadeia de suprimentos, garantindo eficiência e redução de custos.",
+    category: "Enterprise Systems",
+    title: "Supply Chain Optimization",
+    description:
+      "Intelligent supply chain optimization focused on efficiency, automation and cost reduction through scalable systems.",
   },
   {
     id: 2,
-    title: "Portais Governamentais RJ",
-    description: "Desenvolvimento e manutenção de portais digitais para órgãos públicos no Rio de Janeiro, com foco em acessibilidade e segurança.",
+    category: "Public Sector",
+    title: "Government Portals – RJ",
+    description:
+      "Development and maintenance of secure and accessible digital portals for public institutions in Rio de Janeiro.",
   },
   {
     id: 3,
-    title: "Plataforma de Automação de Dados e Relatórios TIM",
-    description: "Soluções avançadas para automação e geração de relatórios inteligentes, apoiando a tomada de decisão na TIM.",
+    category: "Telecom",
+    title: "Data Automation Platform – TIM",
+    description:
+      "Advanced data automation and intelligent reporting solutions to support strategic decision-making.",
   },
   {
     id: 4,
-    title: "Personalização com BMC Helix",
-    description: "Customização de aplicações utilizando BMC Helix, focando em desenvolvimento com código para soluções robustas e flexíveis, sem low-code.",
+    category: "ITSM Engineering",
+    title: "BMC Helix Custom Development",
+    description:
+      "Code-driven customization of BMC Helix applications, delivering robust and flexible enterprise solutions.",
   },
   {
     id: 5,
-    title: "Integração em Saúde - MK Saúde, ERP Omie e Seconci",
-    description: "Implementação e integração de sistemas para a área da saúde, conectando MK Saúde, ERP Omie e Seconci para gestão eficiente e controle de dados.",
+    category: "Healthcare Integration",
+    title: "MK Saúde + Omie ERP + Seconci",
+    description:
+      "System integration for healthcare management, ensuring data reliability and operational efficiency.",
   },
   {
-  id: 6,
-  title: "Portal de Serviços - SecureLink",
-  description: "Desenvolvimento de portal para acompanhamento em tempo real de redes de internet, sites, tráfego e geração de relatórios analíticos.",
-}
-
+    id: 6,
+    category: "Network Monitoring",
+    title: "SecureLink Service Portal",
+    description:
+      "Real-time monitoring portal for internet networks, traffic analytics and operational reporting.",
+  },
 ];
 
 export default function AreasAtuacao() {
   return (
-    <section className="areas-atuacao " id="project">
-      <h2> Projects & Partnerships</h2>
+    <section className="areas-atuacao" id="project">
+      <div className="section-header">
+        <h2>Projects & Partnerships</h2>
+        <p>Enterprise solutions delivered across multiple industries.</p>
+      </div>
+
       <div className="areas-grid">
-        {areas.map(({ id, title, description }) => (
-          <div key={id} className="area-cards">
+        {areas.map(({ id, category, title, description }) => (
+          <div key={id} className="area-card">
+            <span className="area-category">{category}</span>
             <h3>{title}</h3>
             <p>{description}</p>
           </div>

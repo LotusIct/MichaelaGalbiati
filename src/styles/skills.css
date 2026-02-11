@@ -1,169 +1,63 @@
-.skills {
-  padding: 4rem 2rem;
-  background-color: var(--primary);
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.skills h2 {
-  margin-top: 0;
-  text-align: center;
-  color: var(--bg-dark);
-  margin-bottom: 1rem;
-  font-size: 2.75rem;
-  font-weight: 600;
-  font-family: 'Space Grotesk', sans-serif;
-}
-
-.skills-description {
-  color: var(--bg-dark);
-  font-size: 1.125rem;
-  margin-bottom: 3rem;
-  max-width: 600px;
-  text-align: center;
-  font-style: italic;
-  line-height: 1.6;
-  font-weight: 400;
-}
-
-.skills-marquee {
-  overflow: hidden;
-  position: relative;
-  max-width: 1000px;
-  width: 100%;
-  padding: 20px;
-}
-
-.marquee-track {
-  display: flex;
-  animation: marquee 40s linear infinite;
-  white-space: nowrap;
-  animation-play-state: running;
-  transition: animation-play-state 0.3s ease;
-  cursor: grab;
-  padding-bottom: 80px;
-  margin-top: -170px;
-  height: 500px;
-    width: max-content;
-}
-
-.skills-marquee:hover .marquee-track,
-.skills-marquee:active .marquee-track {
-  animation-play-state: paused;
-}
-
-.tech-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.skills-section {
+  padding: 100px 5%;
+  background: #0f0f0f;
   color: white;
-  margin: 0 0.25rem;
-  min-width: 100px;
-  cursor: pointer;
-  position: relative;
-  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.tech-icon i {
+.skills-title {
+  text-align: center;
   font-size: 2.5rem;
-  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.15));
-  transition: filter 0.3s ease;
+  margin-bottom: 60px;
 }
 
-.tech-icon span {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  color: white;
-  user-select: none;
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
 }
 
-.tech-icon:hover {
-  color: var(--bg-dark);
-  transform: scale(1.1);
-}
-.tech-icon span:hover {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  color:var(--bg-dark);
-  user-select: none;
-}
-.tech-icon:hover i {
-  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.3));
+.skill-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-/* Tooltip */
-.tooltip {
-  position: absolute;
-  top: 60%; /* posição abaixo do ícone */
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--bg-dark);
-  color: white;
-  padding: 0.5rem 0.5rem;
-  border-radius: 8px;
-  white-space: normal;
-  font-size: 0.875rem;
-  text-align: center;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-  z-index: 1000;
-  pointer-events: none;
-  width: max-content;
-  max-width: 200px;
+.skill-card:hover {
+  transform: translateY(-5px);
+  border-color: #00bcd4;
 }
 
-.tooltip strong{
-font-size: 0.85rem;
-}
-.tooltip p{
-  font-size: 0.75rem;
-  color: rgb(218, 218, 218);
-  margin-top: 10px;
-}
-.tech-icon:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
+.skill-card h3 {
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  color: #00bcd4;
 }
 
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  .skills {
-    height: auto;
-    padding: 3rem 1rem;
-  }
+.skill-item {
+  margin-bottom: 20px;
+}
 
-  .marquee-track {
-    animation-duration: 30s;
-  }
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
 
-  .tech-icon {
-    margin: 0 1rem;
-    min-width: 80px;
-  }
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: black;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
-  .tech-icon i {
-    font-size: 3rem;
-  }
-
-  .skills-description {
-    max-width: 90%;
-  }
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00bcd4, #2196f3);
+  border-radius: 10px;
+  transition: width 0.8s ease-in-out;
 }

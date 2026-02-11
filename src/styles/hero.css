@@ -1,48 +1,84 @@
 .hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-
+  height: 95vh;
   display: flex;
-  align-items: center;      /* centraliza vertical */
-  justify-content: center;  /* centraliza horizontal */
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #0f0f0f;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  padding: 0 20px;
 }
 
-/* Overlay */
+/* Glow radial moderno */
 .hero::before {
   content: "";
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 188, 212, 0.15), transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 0;
 }
 
-/* Vídeo */
-.hero-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-/* Texto */
-.hero-text {
+.hero-content {
   position: relative;
   z-index: 1;
-  text-align: center;
-  color: #ffffff;
-  padding: 20px;
-  max-width: 900px;
-}
-.hero-text h1 {
-  font-size: 2.5rem;
-  color: white;
+  max-width: 800px;
 }
 
-.hero-text h2 {
-  font-size: 1.5rem !important;
-   color: rgb(155, 191, 223);
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #00bcd4;
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #00bcd4, #2196f3);
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 188, 212, 0.3);
+  color: #0f0f0f;
+}
+
+.btn-secondary {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: 1px solid #00bcd4;
+  color: #00bcd4;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #00bcd4;
+  color: white;
 }
