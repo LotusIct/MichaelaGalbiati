@@ -64,3 +64,53 @@
   line-height: 1.7;
   text-align: center;
 }
+@media (max-width: 768px) {
+
+  .areas-atuacao {
+    padding: 70px 20px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .section-header p {
+    font-size: 0.95rem;
+  }
+
+  .areas-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center; /* 🔥 CENTRALIZA OS CARDS */
+  }
+
+  .area-card {
+    width: 100%;
+    max-width: 420px; /* limita largura para ficar centralizado bonito */
+    padding: 20px;
+    margin: 0; /* remove margin que estava quebrando alinhamento */
+    border-radius: 14px;
+    text-align: left;
+  }
+
+  .area-category {
+    font-size: 0.7rem;
+    margin-bottom: 14px;
+  }
+
+  .area-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+  }
+
+  .area-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: left;
+  }
+}

@@ -82,3 +82,47 @@
   background: #00bcd4;
   color: white;
 }
+/* ========================= */
+/* MOBILE HERO ADJUSTMENTS  */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: 100vh;
+    padding: 0 24px;
+  }
+
+  .hero::before {
+    width: 350px;
+    height: 350px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .hero h2 {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+  }
+
+}

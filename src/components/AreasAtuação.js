@@ -7,42 +7,42 @@ const areas = [
     category: "Enterprise Systems",
     title: "Supply Chain Optimization",
     description:
-      "Intelligent supply chain optimization focused on efficiency, automation and cost reduction through scalable systems.",
+      "Design and development of scalable enterprise systems focused on supply chain optimization, integrating automation, data intelligence and process efficiency to reduce operational costs and improve decision-making.",
   },
   {
     id: 2,
     category: "Public Sector",
-    title: "Government Portals – RJ",
+    title: "Government Digital Portals – RJ",
     description:
-      "Development and maintenance of secure and accessible digital portals for public institutions in Rio de Janeiro.",
+      "Engineering and maintenance of secure, high-availability digital portals for public institutions in Rio de Janeiro, ensuring accessibility, compliance and reliable citizen-facing services.",
   },
   {
     id: 3,
     category: "Telecom",
-    title: "Data Automation Platform – TIM",
+    title: "Data Automation & Analytics Platform – TIM",
     description:
-      "Advanced data automation and intelligent reporting solutions to support strategic decision-making.",
+      "Development of data automation pipelines and intelligent reporting platforms to support large-scale telecom operations and strategic analytics-driven decisions.",
   },
   {
     id: 4,
     category: "ITSM Engineering",
-    title: "BMC Helix Custom Development",
+    title: "BMC Helix Enterprise Customization",
     description:
-      "Code-driven customization of BMC Helix applications, delivering robust and flexible enterprise solutions.",
+      "Custom development and code-level extensions for BMC Helix ITSM environments, delivering robust enterprise workflows, automation and tailored business logic.",
   },
   {
     id: 5,
     category: "Healthcare Integration",
-    title: "MK Saúde + Omie ERP + Seconci",
+    title: "Healthcare Systems Integration – MK Saúde, Omie ERP & Seconci",
     description:
-      "System integration for healthcare management, ensuring data reliability and operational efficiency.",
+      "Integration of healthcare and ERP systems to ensure data consistency, interoperability and operational efficiency across clinical and administrative environments.",
   },
   {
     id: 6,
     category: "Network Monitoring",
-    title: "SecureLink Service Portal",
+    title: "SecureLink Monitoring & Analytics Portal",
     description:
-      "Real-time monitoring portal for internet networks, traffic analytics and operational reporting.",
+      "Development of a real-time network monitoring portal with traffic analytics, performance dashboards and operational intelligence for internet service management.",
   },
 ];
 

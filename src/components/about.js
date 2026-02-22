@@ -4,24 +4,24 @@ import TypingText from "./Type";
 
 const areas = [
   {
-    title: "IA & Data Science",
+    title: "AI Engineering & Data Science",
     text:
-      "Desenvolvimento e aplicação de modelos de Machine Learning e Deep Learning, incluindo pré-processamento e engenharia de dados, seleção e otimização de algoritmos, visão computacional, robótica inteligente e análise avançada de dados para automação, tomada de decisão e soluções preditivas.",
+      "Desenvolvimento de soluções baseadas em Inteligência Artificial e Machine Learning, incluindo modelagem preditiva, engenharia de dados, otimização de algoritmos, Deep Learning e Visão Computacional. Aplicação de IA em cenários corporativos, automação de processos, análise estratégica de dados e construção de sistemas inteligentes orientados a negócio.",
   },
   {
-    title: "Engenharia de Software",
+    title: "Software Engineering",
     text:
-      "Desenvolvimento de sistemas robustos e escaláveis, incluindo arquiteturas distribuídas, APIs eficientes e interfaces de alto desempenho, com foco em boas práticas, qualidade de código e integração entre componentes.",
+      "Arquitetura e desenvolvimento de sistemas escaláveis e orientados a dados, incluindo APIs robustas, integração entre sistemas corporativos e aplicações de alta performance. Aplicação de boas práticas de engenharia de software, segurança, qualidade de código, testes e metodologias ágeis para entrega contínua de soluções eficientes.",
   },
   {
-    title: "UI/UX",
+    title: "Automation, Robotics & Embedded Systems",
     text:
-      "Design centrado no usuário, englobando pesquisa, análise de comportamentos e testes de usabilidade. Criação de protótipos interativos, design visual consistente e acessível, garantindo experiências intuitivas e eficientes desde a concepção da ideia até a entrega final da solução.",
+      "Atuação em automação industrial, integração de sistemas, controle de processos e desenvolvimento de soluções embarcadas e IoT. Implementação de comunicação entre dispositivos, monitoramento inteligente, telemetria e construção de arquiteturas que conectam software, hardware e dados para otimização operacional.",
   },
   {
-    title: "Software Embarcado & IoT",
+    title: "Business Strategy & Technology",
     text:
-      "Desenvolvimento de sistemas embarcados e soluções conectadas, utilizando microcontroladores, sensores e protocolos de comunicação para IoT, automação e monitoramento inteligente.",
+      "Estruturação e acompanhamento de projetos de TI, definição de escopo, requisitos e cronogramas, alinhando tecnologia às estratégias organizacionais. Aplicação de princípios de Engenharia de Negócios para transformar dados e sistemas em vantagem competitiva e geração de valor sustentável.",
   },
 ];
 
@@ -32,12 +32,12 @@ export default function About() {
     <section id="about" className="about">
       <div className="about-header">
         <div className="about-photo"></div>
-        <TypingText text="Hello, prazer! Sou Michaela Galbiati" speed={100} />
+        <TypingText text="Hello!! I'm Michaela Galbiati!" speed={100} />
       </div>
 
-      <p className="about-summary">
-        Com quase 10 anos de experiência em Desenvolvimento de Software, IA e Data Science, atuei em projetos de grande complexidade e impacto, abrangendo Governança de Dados, Análise de Negócios e Engenharia de Software Full-Stack...
-      </p>
+     <p className="about-summary">
+  Engenheira de Software com atuação estratégica em Inteligência Artificial, Automação e Sistemas Inteligentes, integrando tecnologia, dados e visão de negócios para desenvolvimento de soluções escaláveis e de alto impacto. Experiência em projetos corporativos envolvendo IA aplicada, integração de sistemas, arquitetura full-stack e otimização de processos organizacionais.
+</p>
 
       {/* BOTÕES */}
       <div className="about-buttons">

@@ -158,3 +158,32 @@
     transform: translateY(0);
   }
 }
+/* Desktop */
+.mobile-socials {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .desktop-socials {
+    display: none;
+  }
+
+  .mobile-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .navbar-container {
+    grid-template-columns: 1fr auto;
+  }
+
+  .navbar-logo {
+    justify-self: start;
+  }
+
+  .navbar-toggle {
+    justify-self: end;
+  }
+}

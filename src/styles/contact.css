@@ -147,59 +147,39 @@ textarea:focus {
 }
 /* Responsividade para telas até 768px (tablets e smartphones em paisagem) */
 @media (max-width: 768px) {
+
   .contact-content {
     flex-direction: column;
-    max-width: 100%;
-    min-height: auto; /* ajusta altura mínima para não limitar */
-    padding: 0.1rem;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    background: transparent;
   }
 
   .contact-info {
-    margin-right: 0; /* remove margem negativa */
-    min-width: auto; /* permite ajustar ao tamanho da tela */
+    margin: 0;
     width: 100%;
-    margin-bottom: -3rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* sombra menor para ficar mais leve */
+    max-width: 500px;
+    min-width: unset;
+    padding: 2rem 1.5rem;
   }
 
   .contact-form {
-    flex: none; /* para não crescer além do necessário */
     width: 100%;
-    min-width: auto;
-    padding: 1.5rem;
+    margin-top: -40px;
+    max-width: 500px;
+    min-width: unset;
+    padding: 2rem 1.5rem;
   }
 
   .form-row {
     flex-direction: column;
+    gap: 1rem;
   }
 
-  .form-group {
-    width: 100%;
-  }
-
-  /* Ajusta o botão para largura total no mobile */
   .submit-btn {
     width: 100%;
     justify-content: center;
   }
-}
 
-/* Para telas ainda menores (ex: celulares em modo retrato) */
-@media (max-width: 480px) {
-  .contact-section {
-    padding: 2rem 1rem;
-  }
-
-  .contact-title {
-    font-size: 2.2rem;
-  }
-
-  .contact-icon {
-    font-size: 2.5rem;
-  }
-
-  input,
-  textarea {
-    font-size: 0.9rem;
-  }
 }

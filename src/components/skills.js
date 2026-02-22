@@ -5,38 +5,38 @@ const skills = [
   {
     category: "Front-end Development",
     items: [
-      { name: "HTML5", level: 95 },
-      { name: "CSS3", level: 90 },
-      { name: "JavaScript", level: 90 },
-      { name: "TypeScript", level: 85 },
-      { name: "React", level: 85 },
-      { name: "Angular", level: 70 },
-      { name: "Vue.js", level: 65 },
-      { name: "Bootstrap", level: 80 },
+      { name: "HTML5", level: 100 },
+      { name: "CSS3", level: 100 },
+      { name: "JavaScript", level: 100 },
+      { name: "TypeScript", level: 95 },
+      { name: "React", level: 95 },
+      { name: "Angular", level: 90 },
+      { name: "Vue.js", level: 85 },
+      { name: "Bootstrap", level: 90 },
     ],
   },
   {
     category: "Back-end Development",
     items: [
       { name: "Python", level: 90 },
-      { name: ".NET", level: 75 },
-      { name: "C#", level: 80 },
-      { name: "Java", level: 70 },
-      { name: "PHP", level: 70 },
+      { name: ".NET", level: 85 },
+      { name: "C#", level: 85 },
+      { name: "Java", level: 60 },
+      { name: "PHP", level: 80 },
     ],
   },
   {
     category: "Databases",
     items: [
-      { name: "MySQL", level: 80 },
-      { name: "PostgreSQL", level: 75 },
-      { name: "Oracle", level: 70 },
+      { name: "MySQL", level: 100 },
+      { name: "PostgreSQL", level: 95 },
+      { name: "Oracle", level: 80 },
     ],
   },
   {
     category: "Machine Learning & AI",
     items: [
-      { name: "TensorFlow", level: 75 },
+      { name: "TensorFlow", level: 85 },
       { name: "PyTorch", level: 80 },
       { name: "Scikit-learn", level: 85 },
       { name: "Keras", level: 75 },
@@ -60,12 +60,12 @@ const skills = [
     items: [
       { name: "Docker", level: 80 },
       { name: "Kubernetes", level: 60 },
-      { name: "MLflow", level: 65 },
+      { name: "MLflow", level: 75 },
     ],
   },
   {
     category: "Statistical Computing",
-    items: [{ name: "R", level: 70 }],
+    items: [{ name: "R", level: 60 }],
   },
 ];
 

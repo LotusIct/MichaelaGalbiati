@@ -11,7 +11,7 @@ const ContactSection = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.sendForm('SEU_SERVICE_ID', 'SEU_TEMPLATE_ID', form.current, 'SEU_USER_ID')
+    emailjs.sendForm('service_s9xo2jm', 'template_c8urh4o', form.current, 'yKXpqiv8R-PeNFAkz')
       .then((result) => {
           alert('Mensagem enviada com sucesso!');
           e.target.reset();

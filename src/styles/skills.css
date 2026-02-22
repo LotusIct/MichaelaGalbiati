@@ -61,3 +61,41 @@
   border-radius: 10px;
   transition: width 0.8s ease-in-out;
 }
+@media (max-width: 768px) {
+
+  .skills-section {
+    padding: 70px 20px;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .skill-card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .skill-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+  }
+
+  .skill-header {
+    font-size: 0.85rem;
+  }
+
+  .progress-bar {
+    height: 6px;
+  }
+
+  .skill-item {
+    margin-bottom: 16px;
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/menu.css";
-import logo from "../assets/logomimi.png"; // <-- Aqui importa seu logo
+import logo from "../assets/logomimi.png";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,18 +20,25 @@ export default function Navbar() {
             <li><a href="#about" onClick={closeMenu}>about</a></li>
             <li><a href="#projects" onClick={closeMenu}>studio</a></li>
             <li><a href="#learn" onClick={closeMenu}>learn</a></li>
-            <li><a href="#project" onClick={closeMenu}>Projects</a></li>
-            
-            
+            <li><a href="#project" onClick={closeMenu}>projects</a></li>
             <li><a href="#contact" onClick={closeMenu}>contact</a></li>
+          </ul>
+
+          {/* 👇 Redes sociais dentro do menu mobile */}
+          <ul className="navbar-socials mobile-socials">
+            <li><a href="mailto:michaela.galbiati@gmail.com"><i className="fas fa-envelope"></i></a></li>
+            <li><a href="https://github.com/Michaela-Galbiati" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/michaela-galbiati" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/michaelagalbiati/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a></li>
           </ul>
         </div>
 
-        <ul className="navbar-socials">
-          <li><a href="mailto:seuemail@gmail.com"><i className="fas fa-envelope"></i></a></li>
-          <li><a href="https://github.com" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a></li>
-          <li><a href="https://linkedin.com" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
-          <li><a href="https://instagram.com" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a></li>
+        {/* 👇 Mantém redes no desktop */}
+        <ul className="navbar-socials desktop-socials">
+          <li><a href="mailto:michaela.galbiati@gmail.com"><i className="fas fa-envelope"></i></a></li>
+          <li><a href="https://github.com/Michaela-Galbiati" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/michaela-galbiati" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
+          <li><a href="https://www.instagram.com/michaelagalbiati/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a></li>
         </ul>
 
         <button

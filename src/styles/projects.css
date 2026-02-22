@@ -48,7 +48,6 @@
   margin: 0 1.2rem 1.2rem;
   font-size: 0.95rem;
   line-height: 1.6;
-  height: 80px;
   color: var(--text-muted);
 }
 .project-btn {
@@ -125,21 +124,41 @@
 }
 
 @media (max-width: 768px) {
+
+  #projects {
+    padding: 60px 20px;
+  }
+
   .projects-carousel {
-    flex-direction: column;
+    flex-direction: row;
+    gap: 0.8rem;
   }
 
   .projects-track {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .slider-btn {
-    display: none;
+    overflow: hidden;
+    justify-content: center;
+    padding: 20px 0;
   }
 
   .project-card {
     width: 100%;
-    max-width: 520px;
+    max-width: 100%;
+  }
+
+  .project-video {
+    height: 190px;
+  }
+
+  .project-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  .slider-btn {
+    width: 40px;
+    height: 40px;
   }
 }

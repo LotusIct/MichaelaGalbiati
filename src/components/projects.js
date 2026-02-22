@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/projects.css";
 
 import blogDeepbit from "../assets/projects/mirai.mp4";
@@ -15,7 +15,7 @@ const projects = [
     id: 1,
     title: "Mirai",
     description:
-      "Um blog interativo da IA preditiva da Imbas, com conteúdo sobre tecnologia, estratégia e inovação.",
+      "Plataforma de conteúdo estratégico com foco em Inteligência Artificial preditiva, inovação e tecnologia aplicada a negócios. Estruturada para integrar storytelling, branding e visão analítica orientada a dados.",
     video: blogDeepbit,
     link: "https://blog-teste-beta.vercel.app/",
   },
@@ -23,7 +23,7 @@ const projects = [
     id: 2,
     title: "Patas pelo Brasil",
     description:
-      "Landing page para um serviço exclusivo de viagens personalizadas.",
+      "Landing page desenvolvida com foco em conversão para um serviço de viagens personalizadas. Arquitetura orientada à experiência do usuário, responsividade e performance.",
     video: travelPest,
     link: "https://trip-green-zeta.vercel.app/",
   },
@@ -31,7 +31,7 @@ const projects = [
     id: 3,
     title: "MicroAroma",
     description:
-      "Página institucional de um projeto de pesquisa laboratorial.",
+      "Website institucional para projeto de pesquisa laboratorial, estruturado para transmitir credibilidade técnica, organização científica e clareza na apresentação de dados e objetivos.",
     video: labAromas,
     link: "https://industrial-ecru.vercel.app/",
   },
@@ -39,7 +39,7 @@ const projects = [
     id: 4,
     title: "Solea",
     description:
-      "Loja virtual especializada em tênis exclusivos e colecionáveis.",
+      "E-commerce conceitual voltado ao mercado de sneakers exclusivos. Implementação de layout moderno, foco em branding, navegação fluida e arquitetura escalável para expansão futura.",
     video: sneakerLab,
     link: "https://tenis-one.vercel.app/",
   },
@@ -47,7 +47,7 @@ const projects = [
     id: 5,
     title: "Portfólio Profissional",
     description:
-      "Site pessoal com foco em Business Intelligence e consultoria.",
+      "Site institucional com posicionamento estratégico voltado a Business Intelligence e consultoria. Estruturado para comunicar autoridade técnica, visão analítica e proposta de valor clara.",
     video: portfolioJuridico,
     link: "https://teste-landing-pages.vercel.app/",
   },
@@ -55,7 +55,7 @@ const projects = [
     id: 6,
     title: "Vibe Studio",
     description:
-      "Website de um estúdio criativo especializado em marketing digital.",
+      "Website para estúdio criativo especializado em marketing digital. Design orientado à identidade visual, experiência do usuário e comunicação estratégica de serviços.",
     video: studioMGD,
     link: "https://studio-gyy6.vercel.app/",
   },
@@ -63,7 +63,7 @@ const projects = [
     id: 7,
     title: "Imbas",
     description:
-      "Site de apresentação e conexão de empresários.",
+      "Plataforma institucional para conexão de empresários e networking estratégico. Estruturada para apresentar visão de negócios, autoridade e posicionamento de marca.",
     video: empresariosMG,
     link: "https://new-tau-taupe.vercel.app/",
   },
@@ -71,32 +71,45 @@ const projects = [
     id: 8,
     title: "ICR3",
     description:
-      "Site institucional com foco em produtos e soluções.",
+      "Website institucional voltado à apresentação de produtos e soluções. Estrutura focada em clareza, credibilidade técnica e comunicação objetiva com o mercado.",
     video: icr3,
     link: "https://www.icr3.com.br/",
   },
 ];
 
-const VISIBLE_SLIDES = 3;
-
 export default function Projects() {
+
+  const [visibleSlides, setVisibleSlides] = useState(
+    window.innerWidth <= 768 ? 1 : 3
+  );
+
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setVisibleSlides(window.innerWidth <= 768 ? 1 : 3);
+      setCurrentIndex(0); 
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const next = () => {
     setCurrentIndex((prev) =>
-      prev + 1 > projects.length - VISIBLE_SLIDES ? 0 : prev + 1
+      prev + 1 > projects.length - visibleSlides ? 0 : prev + 1
     );
   };
 
   const prev = () => {
     setCurrentIndex((prev) =>
-      prev === 0 ? projects.length - VISIBLE_SLIDES : prev - 1
+      prev === 0 ? projects.length - visibleSlides : prev - 1
     );
   };
 
   const visibleProjects = projects.slice(
     currentIndex,
-    currentIndex + VISIBLE_SLIDES
+    currentIndex + visibleSlides
   );
 
   return (
