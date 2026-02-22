@@ -27,7 +27,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/michaelagalbiati"
+            href="https://www.linkedin.com/in/michaela-galbiati"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -42,10 +42,10 @@ export default function Footer() {
       </div>
       </div>
 
-     
+
       </div>
 
-     
+
     </footer>
   );
 }
