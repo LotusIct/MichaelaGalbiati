@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/about.css";
 import TypingText from "./Type";
-
+import minhaFoto from "../assets/michaela.png";
 const areas = [
   {
     title: "AI Engineering & Data Science",
@@ -31,7 +31,9 @@ export default function About() {
   return (
     <section id="about" className="about">
       <div className="about-header">
-        <div className="about-photo"></div>
+          <div className="about-photo">
+      <img src={minhaFoto} alt="Minha foto" />
+    </div>
         <TypingText text="Hello!! I'm Michaela Galbiati!" speed={100} />
       </div>
 

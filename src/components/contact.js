@@ -98,7 +98,7 @@ const ContactSection = () => {
                   name="message"
                   id="message"
                   rows="6"
-                  placeholder="Olá!"
+                  placeholder="Olá! Gostaria..."
                   required
                 ></textarea>
               </div>
